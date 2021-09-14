@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Currency Converter</title>
+	<link rel="stylesheet" type="text/css" href="font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			<div class="amount">
+				<legend>Amount</legend>
+				<input type="number" placeholder="enter the amount" min="1" id="amount">
+			</div>
+			<div class="from">
+				<legend>From</legend>
+				<select id="from">
+					<option value="none">Select your currency</option>
+					<option value="AFS"><span>ف&nbsp;</span>AFS</option>
+					<option value="USD"><span>&dollar;&nbsp;</span>USD</option>
+					<option value="EUR"><span>&euro;&nbsp;</span>EUR</option>
+					<option value="GBP"><span>&pound;&nbsp;</span>GBP</option>
+					<option value="JPY"><span>&yen;&nbsp;</span>JPY</option>
+					<option value="INR"><span>&#x20b9;&nbsp;</span>INR</option>
+				</select>
+			</div>
+			<i class="fa fa-arrow-right"></i>
+			<div class="to">
+				<legend>To</legend>
+				<select id="to">
+					<option value="none">Select your currency</option>
+					<option value="AFS"><span>ف&nbsp;</span>AFS</option>
+					<option value="USD"><span>&dollar;&nbsp;</span>USD</option>
+					<option value="EUR"><span>&euro;&nbsp;</span>EUR</option>
+					<option value="GBP"><span>&pound;&nbsp;</span>GBP</option>
+					<option value="JPY"><span>&yen;&nbsp;</span>JPY</option>
+					<option value="INR"><span>&#x20b9;&nbsp;</span>INR</option>
+				</select>
+			</div>
+		</div>
+			<button type="button" class="convert-btn">convert</button>
+			<label class="result"><!--content here --></label>
+	</div>
+	<script src="app.js"></script>
+</body>
+</html>
